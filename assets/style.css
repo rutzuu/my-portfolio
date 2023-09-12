@@ -1,0 +1,32 @@
+body {
+    /* background-color: black; */
+    /* color: white; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav.navbar {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+}
+.navbar a {
+    height: max-content;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    align-content: center;
+    flex: 0 0 150px;
+    height: 20px;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    height:100vh;
+}
