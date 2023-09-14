@@ -1,18 +1,23 @@
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
-    /* background-color: black; */
-    /* color: white; */
+    background-color: rgb(234, 232, 203);
+    /* background-image: url('/assets/waves.png'); */
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 nav.navbar {
     width: 100%;
-    padding: 40px 20px;
+    padding: 1.5rem 1.3rem;
     display: flex;
     justify-content: center;
     background-color: white;
     position: fixed;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .navbar a {
     height: max-content;
@@ -23,10 +28,99 @@ nav.navbar {
     align-content: center;
     flex: 0 0 150px;
     height: 20px;
+    font-size: 0.75rem;
 }
 
 .hero {
     display: grid;
     place-items: center;
     height:100vh;
+}
+
+button {
+    background-color: rgb(243, 46, 118);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    border-top: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 10%;
+    height: 60vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 2% 10%;
+    height: 5vh;
+    padding-bottom: 5%;
+
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: rgb(243, 46, 118);
+    text-align:center;
+    align-content: center;
+    margin-left: .2rem; 
+}
+
+.container-left, .container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-right {
+    grid-column: 3 / span 9;
+}
+
+.about {
+    background-color: rgb(207, 198, 71);
+}
+
+.about h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 5%;
+        height: 40vh;
+    }
+    .container-right, .container-left {
+        grid-column: 1 / span 12;
+    }
+
+    .container-left h2 {
+        margin: 2rem 0 0 0;
+    }
+
+    .container-right p {
+        margin: 1rem 0 2rem 0;
+    }
+    .about h2 {
+        font-size: 2rem;
+    }
+    .navbar a {
+        flex: 0 0 100px;
+        font-size: 0.5rem;
+    }
+
+    .footer {
+        margin-bottom: 10%;
+    }
 }
