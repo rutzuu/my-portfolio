@@ -1,0 +1,178 @@
+body {
+    /* background-color: black; */
+    /* background-image: url(assets/bg.jpg); */
+    /* background: linear-gradient(to right, white, rgb(182, 222, 182, 0.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+    margin: 0 ;
+}
+
+a:link {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 24px;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+button:active {
+    background-color: yellow;
+    color: black;
+}
+
+.list {
+    font-size: 40px;
+}
+
+/* n = element number, odd, even */
+/* .list li:nth-child(odd) {
+    background-color: yellowgreen;
+} */
+/* 3 * element number, starting from 1 */
+/* .list li:nth-child(3n) {
+    background-color: yellowgreen;
+} */
+/* 3* element number, + starting point */
+.list li:nth-child(2n + 3) {
+    background-color: yellowgreen;
+}
+
+
+/* .pic {
+    float: left;
+    float: right;
+    padding: 0 40px;
+} */
+
+/*
+#box1, #box2 {
+    border: 5px solid;
+    width: 400px;
+    height: 400px;
+    position: static 
+    position: relative;
+}
+*/
+
+#box1 {
+    border: 5px solid;
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    /* margin: top right bottom left */
+    /* margin: 20px 0 100px 60px; */
+    /* margin: top left+right bottom */
+    /* margin: 20px 40px 80px; */
+    /* margin: top+bottom left+right; */
+    /* margin: 20px 40px; */
+    /* margin-left:auto;
+    margin-right: 40px; */
+    /* margin: auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 20px auto;
+    /* position: relative; */
+    bottom: 0;
+}
+
+#box2 {
+    border: 5px solid;
+    width: 100vw;
+    height: 200px;
+    background-color: lightblue;
+    /* position: absolute; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+
+h1 {
+    color: red;
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: italic;
+    text-align: center;
+
+    /* text-shadow: x-axis y-axis spread color */
+    /* text-shadow: -2px 5px 2px rgb(223, 168, 158), 2px -5px 2px rgb(158, 223, 223) */
+}
+
+.fa-facebook, .fa-youtube, .fa-twitter {
+    color: red;
+}
+
+.container {
+    /* height: 1000px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+
+    /* box-shadow: x-axis y-axis spread color */
+    /* box-shadow: 0 10px 3px rgb(229, 229, 229); */
+}
+
+p {
+    /* color: blue;
+    padding: 24px; */
+    
+    /* border-style: solid;
+    border-width: 4px;
+    border-color: red;
+    border-right: yellow; */
+
+    /* border: (width) (style) (color) */
+    /* border: 2px solid green;
+    border-radius: 24px; */
+
+    /* font-size: 20px;
+    font-family: 'Poppins', sans-serif; */
+    /* text-decoration: wavy; */
+
+    /* font: font-weight font-size font-family */
+    font: 400 20px 'Poppins', sans-serif;
+}
+/* .text {
+    font-family: 'Poppins', sans-serif;
+    color: green;
+    font-size: 30px;
+}
+
+.text2 {
+    color: yellow;
+    font-size: 30px;
+}
+
+#ptext {
+    color: blue;
+    font-size: 20px;
+} */
